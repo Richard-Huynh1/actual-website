@@ -12,17 +12,37 @@
 </head>
 <body>
   <div id="topnav">
-    <button class="dropdown">Menu<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="#">Option 1</a>
-      <a href="#">Option 2</a>
-      <a href="#">Option 3</a>
+    <div class="dropdown">
+      <button class="dropbtn">Menu<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
     </div>
-    <img src="images/sun.png" height="50" style="float:right">
+    <img src="images/sun.png" height="50" style="top:0;float:right">
   </div>
-  <div class="slideshow-container" style="width:500px;height:200px;border-style:solid">
+  <div id="slideshow-container">
+    <div class="slide fade">
+      <img src="images/cat1.jpg" style="height:100%;width:100%">
+    </div>
+    <div class="slide fade">
+      <img src="images/cat2.jpg" style="height:100%;width:100%">
+    </div>
+    <div class="slide fade">
+      <img src="images/cat3.jpg" style="height:100%;width:100%">
+    </div>
+    <a id="prev" onclick="plusSlides(-1)">❮</a>
+    <a id="next" onclick="plusSlides(1)">❯</a>
   </div>
-  
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
   <h1>Heading</h1>
   <p>Body text</p>
 
