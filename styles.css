@@ -47,7 +47,7 @@ p {
   color: #111;
   cursor: pointer;
   padding: 18px;
-  width: 80%;
+  width: 60%;
   border: none;
   text-align:center;
   color: #606060;
@@ -59,12 +59,23 @@ p {
   background-color: #ccc;
 }
 
+.collapsible-content {
+  display: none;
+  overflow: hidden;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 60%;
+  margin: auto;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #bdbdbd;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: #000;
+  font: 15px "Gill Sans", "Noto Sans", sans-serif;
   z-index: 1;
 }
 
@@ -129,6 +140,10 @@ p {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.collapsible-active {
+  background-color: #b8b8b8;
 }
 
 .fade {
