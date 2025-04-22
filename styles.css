@@ -107,9 +107,8 @@ p {
 #prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
   padding: 16px;
-  margin-top: -22px;
+  top: 177px;
   color: #000;
   font-weight: bold;
   font-size: 18px;
@@ -119,8 +118,7 @@ p {
 }
 
 #next {
-  float: right;
-  right: 33.5%;
+  margin-left: 459px;
 }
 
 #prev:hover, #next:hover {
